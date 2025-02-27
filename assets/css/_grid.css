@@ -1,0 +1,390 @@
+.fx-container {
+  max-width: var(--fx-max-width);
+  margin: var(--m-auto);
+  padding: 0 var(--fx-p);
+  display: var(--d-flex);
+  flex-direction: var(--dir-col);
+}
+
+.fx-row {
+  display: var(--d-flex);
+  flex-wrap: var(--wrap);
+  gap: var(--fx-gap);
+  align-items: var(--item-start);
+}
+
+[class*="fx-w"] {
+  flex: 0 0 100%;
+  max-width: 100%;
+  box-sizing: border-box;
+}
+
+/* **********************/
+/* ستون‌های موبایل     */
+/* **********************/
+
+/* 
+ calc((100% / n) - (var(--fx-gap) * (n - 1)) / n)
+ توضیح: برای کلاس fx-w-X، تعداد ستون (n) برابر است با 100 ÷ X.
+   به عنوان مثال:
+   - fx-w-5: n = 100/5 = 20   ⇒ width = calc((100% - (19 * var(--fx-gap))) / 20)
+   - fx-w-10: n = 10           ⇒ width = calc((100% - (9 * var(--fx-gap))) / 10)
+   - fx-w-25: n = 4            ⇒ width = calc((100% - (3 * var(--fx-gap))) / 4)
+   و به همین ترتیب. 
+*/
+
+.fx-w-5 {
+  flex: 0 0 calc((100% - (19 * var(--fx-gap))) / 20);
+  max-width: calc((100% - (19 * var(--fx-gap))) / 20);
+}
+.fx-w-10 {
+  flex: 0 0 calc((100% - (9 * var(--fx-gap))) / 10);
+  max-width: calc((100% - (9 * var(--fx-gap))) / 10);
+}
+.fx-w-15 {
+  /* 100/15 ≈ 6.66667 */
+  flex: 0 0 calc((100% - (5.66667 * var(--fx-gap))) / 6.66667);
+  max-width: calc((100% - (5.66667 * var(--fx-gap))) / 6.66667);
+}
+.fx-w-20 {
+  /* 100/20 = 5 */
+  flex: 0 0 calc((100% - (4 * var(--fx-gap))) / 5);
+  max-width: calc((100% - (4 * var(--fx-gap))) / 5);
+}
+.fx-w-25 {
+  /* 100/25 = 4 */
+  flex: 0 0 calc((100% - (3 * var(--fx-gap))) / 4);
+  max-width: calc((100% - (3 * var(--fx-gap))) / 4);
+}
+.fx-w-30 {
+  /* 100/30 ≈ 3.33333 */
+  flex: 0 0 calc((100% - (2.33333 * var(--fx-gap))) / 3.33333);
+  max-width: calc((100% - (2.33333 * var(--fx-gap))) / 3.33333);
+}
+.fx-w-35 {
+  /* 100/35 ≈ 2.85714 */
+  flex: 0 0 calc((100% - (1.85714 * var(--fx-gap))) / 2.85714);
+  max-width: calc((100% - (1.85714 * var(--fx-gap))) / 2.85714);
+}
+.fx-w-40 {
+  /* 100/40 = 2.5 */
+  flex: 0 0 calc((100% - (1.5 * var(--fx-gap))) / 2.5);
+  max-width: calc((100% - (1.5 * var(--fx-gap))) / 2.5);
+}
+.fx-w-45 {
+  /* 100/45 ≈ 2.22222 */
+  flex: 0 0 calc((100% - (1.22222 * var(--fx-gap))) / 2.22222);
+  max-width: calc((100% - (1.22222 * var(--fx-gap))) / 2.22222);
+}
+.fx-w-50 {
+  /* 100/50 = 2 */
+  flex: 0 0 calc((100% - (1 * var(--fx-gap))) / 2);
+  max-width: calc((100% - (1 * var(--fx-gap))) / 2);
+}
+.fx-w-55 {
+  /* 100/55 ≈ 1.81818 */
+  flex: 0 0 calc((100% - (0.81818 * var(--fx-gap))) / 1.81818);
+  max-width: calc((100% - (0.81818 * var(--fx-gap))) / 1.81818);
+}
+.fx-w-60 {
+  /* 100/60 ≈ 1.66667 */
+  flex: 0 0 calc((100% - (0.66667 * var(--fx-gap))) / 1.66667);
+  max-width: calc((100% - (0.66667 * var(--fx-gap))) / 1.66667);
+}
+.fx-w-65 {
+  /* 100/65 ≈ 1.53846 */
+  flex: 0 0 calc((100% - (0.53846 * var(--fx-gap))) / 1.53846);
+  max-width: calc((100% - (0.53846 * var(--fx-gap))) / 1.53846);
+}
+.fx-w-70 {
+  /* 100/70 ≈ 1.42857 */
+  flex: 0 0 calc((100% - (0.42857 * var(--fx-gap))) / 1.42857);
+  max-width: calc((100% - (0.42857 * var(--fx-gap))) / 1.42857);
+}
+.fx-w-75 {
+  /* 100/75 = 1.33333 */
+  flex: 0 0 calc((100% - (0.33333 * var(--fx-gap))) / 1.33333);
+  max-width: calc((100% - (0.33333 * var(--fx-gap))) / 1.33333);
+}
+.fx-w-80 {
+  /* 100/80 = 1.25 */
+  flex: 0 0 calc((100% - (0.25 * var(--fx-gap))) / 1.25);
+  max-width: calc((100% - (0.25 * var(--fx-gap))) / 1.25);
+}
+.fx-w-85 {
+  /* 100/85 ≈ 1.17647 */
+  flex: 0 0 calc((100% - (0.17647 * var(--fx-gap))) / 1.17647);
+  max-width: calc((100% - (0.17647 * var(--fx-gap))) / 1.17647);
+}
+.fx-w-90 {
+  /* 100/90 ≈ 1.11111 */
+  flex: 0 0 calc((100% - (0.11111 * var(--fx-gap))) / 1.11111);
+  max-width: calc((100% - (0.11111 * var(--fx-gap))) / 1.11111);
+}
+.fx-w-95 {
+  /* 100/95 ≈ 1.05263 */
+  flex: 0 0 calc((100% - (0.05263 * var(--fx-gap))) / 1.05263);
+  max-width: calc((100% - (0.05263 * var(--fx-gap))) / 1.05263);
+}
+.fx-w-100 {
+  flex: 0 0 100%;
+  max-width: 100%;
+}
+
+/* **********************/
+/* ستون‌های دستگاه‌های کوچک (Small) */
+/* **********************/
+@media (min-width: 36rem) {
+  .fx-ws-5 {
+    flex: 0 0 calc((100% - (19 * var(--fx-gap))) / 20);
+    max-width: calc((100% - (19 * var(--fx-gap))) / 20);
+  }
+  .fx-ws-10 {
+    flex: 0 0 calc((100% - (9 * var(--fx-gap))) / 10);
+    max-width: calc((100% - (9 * var(--fx-gap))) / 10);
+  }
+  .fx-ws-15 {
+    flex: 0 0 calc((100% - (5.66667 * var(--fx-gap))) / 6.66667);
+    max-width: calc((100% - (5.66667 * var(--fx-gap))) / 6.66667);
+  }
+  .fx-ws-20 {
+    flex: 0 0 calc((100% - (4 * var(--fx-gap))) / 5);
+    max-width: calc((100% - (4 * var(--fx-gap))) / 5);
+  }
+  .fx-ws-25 {
+    flex: 0 0 calc((100% - (3 * var(--fx-gap))) / 4);
+    max-width: calc((100% - (3 * var(--fx-gap))) / 4);
+  }
+  .fx-ws-30 {
+    flex: 0 0 calc((100% - (2.33333 * var(--fx-gap))) / 3.33333);
+    max-width: calc((100% - (2.33333 * var(--fx-gap))) / 3.33333);
+  }
+  .fx-ws-35 {
+    flex: 0 0 calc((100% - (1.85714 * var(--fx-gap))) / 2.85714);
+    max-width: calc((100% - (1.85714 * var(--fx-gap))) / 2.85714);
+  }
+  .fx-ws-40 {
+    flex: 0 0 calc((100% - (1.5 * var(--fx-gap))) / 2.5);
+    max-width: calc((100% - (1.5 * var(--fx-gap))) / 2.5);
+  }
+  .fx-ws-45 {
+    flex: 0 0 calc((100% - (1.22222 * var(--fx-gap))) / 2.22222);
+    max-width: calc((100% - (1.22222 * var(--fx-gap))) / 2.22222);
+  }
+  .fx-ws-50 {
+    flex: 0 0 calc((100% - (1 * var(--fx-gap))) / 2);
+    max-width: calc((100% - (1 * var(--fx-gap))) / 2);
+  }
+  .fx-ws-55 {
+    flex: 0 0 calc((100% - (0.81818 * var(--fx-gap))) / 1.81818);
+    max-width: calc((100% - (0.81818 * var(--fx-gap))) / 1.81818);
+  }
+  .fx-ws-60 {
+    flex: 0 0 calc((100% - (0.66667 * var(--fx-gap))) / 1.66667);
+    max-width: calc((100% - (0.66667 * var(--fx-gap))) / 1.66667);
+  }
+  .fx-ws-65 {
+    flex: 0 0 calc((100% - (0.53846 * var(--fx-gap))) / 1.53846);
+    max-width: calc((100% - (0.53846 * var(--fx-gap))) / 1.53846);
+  }
+  .fx-ws-70 {
+    flex: 0 0 calc((100% - (0.42857 * var(--fx-gap))) / 1.42857);
+    max-width: calc((100% - (0.42857 * var(--fx-gap))) / 1.42857);
+  }
+  .fx-ws-75 {
+    flex: 0 0 calc((100% - (0.33333 * var(--fx-gap))) / 1.33333);
+    max-width: calc((100% - (0.33333 * var(--fx-gap))) / 1.33333);
+  }
+  .fx-ws-80 {
+    flex: 0 0 calc((100% - (0.25 * var(--fx-gap))) / 1.25);
+    max-width: calc((100% - (0.25 * var(--fx-gap))) / 1.25);
+  }
+  .fx-ws-85 {
+    flex: 0 0 calc((100% - (0.17647 * var(--fx-gap))) / 1.17647);
+    max-width: calc((100% - (0.17647 * var(--fx-gap))) / 1.17647);
+  }
+  .fx-ws-90 {
+    flex: 0 0 calc((100% - (0.11111 * var(--fx-gap))) / 1.11111);
+    max-width: calc((100% - (0.11111 * var(--fx-gap))) / 1.11111);
+  }
+  .fx-ws-95 {
+    flex: 0 0 calc((100% - (0.05263 * var(--fx-gap))) / 1.05263);
+    max-width: calc((100% - (0.05263 * var(--fx-gap))) / 1.05263);
+  }
+  .fx-ws-100 {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+}
+
+/* **********************/
+/* ستون‌های دستگاه‌های متوسط (Medium) */
+/* **********************/
+@media (min-width: 48rem) {
+  .fx-wm-5 {
+    flex: 0 0 calc((100% - (19 * var(--fx-gap))) / 20);
+    max-width: calc((100% - (19 * var(--fx-gap))) / 20);
+  }
+  .fx-wm-10 {
+    flex: 0 0 calc((100% - (9 * var(--fx-gap))) / 10);
+    max-width: calc((100% - (9 * var(--fx-gap))) / 10);
+  }
+  .fx-wm-15 {
+    flex: 0 0 calc((100% - (5.66667 * var(--fx-gap))) / 6.66667);
+    max-width: calc((100% - (5.66667 * var(--fx-gap))) / 6.66667);
+  }
+  .fx-wm-20 {
+    flex: 0 0 calc((100% - (4 * var(--fx-gap))) / 5);
+    max-width: calc((100% - (4 * var(--fx-gap))) / 5);
+  }
+  .fx-wm-25 {
+    flex: 0 0 calc((100% - (3 * var(--fx-gap))) / 4);
+    max-width: calc((100% - (3 * var(--fx-gap))) / 4);
+  }
+  .fx-wm-30 {
+    flex: 0 0 calc((100% - (2.33333 * var(--fx-gap))) / 3.33333);
+    max-width: calc((100% - (2.33333 * var(--fx-gap))) / 3.33333);
+  }
+  .fx-wm-35 {
+    flex: 0 0 calc((100% - (1.85714 * var(--fx-gap))) / 2.85714);
+    max-width: calc((100% - (1.85714 * var(--fx-gap))) / 2.85714);
+  }
+  .fx-wm-40 {
+    flex: 0 0 calc((100% - (1.5 * var(--fx-gap))) / 2.5);
+    max-width: calc((100% - (1.5 * var(--fx-gap))) / 2.5);
+  }
+  .fx-wm-45 {
+    flex: 0 0 calc((100% - (1.22222 * var(--fx-gap))) / 2.22222);
+    max-width: calc((100% - (1.22222 * var(--fx-gap))) / 2.22222);
+  }
+  .fx-wm-50 {
+    flex: 0 0 calc((100% - (1 * var(--fx-gap))) / 2);
+    max-width: calc((100% - (1 * var(--fx-gap))) / 2);
+  }
+  .fx-wm-55 {
+    flex: 0 0 calc((100% - (0.81818 * var(--fx-gap))) / 1.81818);
+    max-width: calc((100% - (0.81818 * var(--fx-gap))) / 1.81818);
+  }
+  .fx-wm-60 {
+    flex: 0 0 calc((100% - (0.66667 * var(--fx-gap))) / 1.66667);
+    max-width: calc((100% - (0.66667 * var(--fx-gap))) / 1.66667);
+  }
+  .fx-wm-65 {
+    flex: 0 0 calc((100% - (0.53846 * var(--fx-gap))) / 1.53846);
+    max-width: calc((100% - (0.53846 * var(--fx-gap))) / 1.53846);
+  }
+  .fx-wm-70 {
+    flex: 0 0 calc((100% - (0.42857 * var(--fx-gap))) / 1.42857);
+    max-width: calc((100% - (0.42857 * var(--fx-gap))) / 1.42857);
+  }
+  .fx-wm-75 {
+    flex: 0 0 calc((100% - (0.33333 * var(--fx-gap))) / 1.33333);
+    max-width: calc((100% - (0.33333 * var(--fx-gap))) / 1.33333);
+  }
+  .fx-wm-80 {
+    flex: 0 0 calc((100% - (0.25 * var(--fx-gap))) / 1.25);
+    max-width: calc((100% - (0.25 * var(--fx-gap))) / 1.25);
+  }
+  .fx-wm-85 {
+    flex: 0 0 calc((100% - (0.17647 * var(--fx-gap))) / 1.17647);
+    max-width: calc((100% - (0.17647 * var(--fx-gap))) / 1.17647);
+  }
+  .fx-wm-90 {
+    flex: 0 0 calc((100% - (0.11111 * var(--fx-gap))) / 1.11111);
+    max-width: calc((100% - (0.11111 * var(--fx-gap))) / 1.11111);
+  }
+  .fx-wm-95 {
+    flex: 0 0 calc((100% - (0.05263 * var(--fx-gap))) / 1.05263);
+    max-width: calc((100% - (0.05263 * var(--fx-gap))) / 1.05263);
+  }
+  .fx-wm-100 {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+}
+
+/* **********************/
+/* ستون‌های دستگاه‌های بزرگ (Large) */
+/* **********************/
+@media (min-width: 62rem) {
+  .fx-wl-5 {
+    flex: 0 0 calc((100% - (19 * var(--fx-gap))) / 20);
+    max-width: calc((100% - (19 * var(--fx-gap))) / 20);
+  }
+  .fx-wl-10 {
+    flex: 0 0 calc((100% - (9 * var(--fx-gap))) / 10);
+    max-width: calc((100% - (9 * var(--fx-gap))) / 10);
+  }
+  .fx-wl-15 {
+    flex: 0 0 calc((100% - (5.66667 * var(--fx-gap))) / 6.66667);
+    max-width: calc((100% - (5.66667 * var(--fx-gap))) / 6.66667);
+  }
+  .fx-wl-20 {
+    flex: 0 0 calc((100% - (4 * var(--fx-gap))) / 5);
+    max-width: calc((100% - (4 * var(--fx-gap))) / 5);
+  }
+  .fx-wl-25 {
+    flex: 0 0 calc((100% - (3 * var(--fx-gap))) / 4);
+    max-width: calc((100% - (3 * var(--fx-gap))) / 4);
+  }
+  .fx-wl-30 {
+    flex: 0 0 calc((100% - (2.33333 * var(--fx-gap))) / 3.33333);
+    max-width: calc((100% - (2.33333 * var(--fx-gap))) / 3.33333);
+  }
+  .fx-wl-35 {
+    flex: 0 0 calc((100% - (1.85714 * var(--fx-gap))) / 2.85714);
+    max-width: calc((100% - (1.85714 * var(--fx-gap))) / 2.85714);
+  }
+  .fx-wl-40 {
+    flex: 0 0 calc((100% - (1.5 * var(--fx-gap))) / 2.5);
+    max-width: calc((100% - (1.5 * var(--fx-gap))) / 2.5);
+  }
+  .fx-wl-45 {
+    flex: 0 0 calc((100% - (1.22222 * var(--fx-gap))) / 2.22222);
+    max-width: calc((100% - (1.22222 * var(--fx-gap))) / 2.22222);
+  }
+  .fx-wl-50 {
+    flex: 0 0 calc((100% - (1 * var(--fx-gap))) / 2);
+    max-width: calc((100% - (1 * var(--fx-gap))) / 2);
+  }
+  .fx-wl-55 {
+    flex: 0 0 calc((100% - (0.81818 * var(--fx-gap))) / 1.81818);
+    max-width: calc((100% - (0.81818 * var(--fx-gap))) / 1.81818);
+  }
+  .fx-wl-60 {
+    flex: 0 0 calc((100% - (0.66667 * var(--fx-gap))) / 1.66667);
+    max-width: calc((100% - (0.66667 * var(--fx-gap))) / 1.66667);
+  }
+  .fx-wl-65 {
+    flex: 0 0 calc((100% - (0.53846 * var(--fx-gap))) / 1.53846);
+    max-width: calc((100% - (0.53846 * var(--fx-gap))) / 1.53846);
+  }
+  .fx-wl-70 {
+    flex: 0 0 calc((100% - (0.42857 * var(--fx-gap))) / 1.42857);
+    max-width: calc((100% - (0.42857 * var(--fx-gap))) / 1.42857);
+  }
+  .fx-wl-75 {
+    flex: 0 0 calc((100% - (0.33333 * var(--fx-gap))) / 1.33333);
+    max-width: calc((100% - (0.33333 * var(--fx-gap))) / 1.33333);
+  }
+  .fx-wl-80 {
+    flex: 0 0 calc((100% - (0.25 * var(--fx-gap))) / 1.25);
+    max-width: calc((100% - (0.25 * var(--fx-gap))) / 1.25);
+  }
+  .fx-wl-85 {
+    flex: 0 0 calc((100% - (0.17647 * var(--fx-gap))) / 1.17647);
+    max-width: calc((100% - (0.17647 * var(--fx-gap))) / 1.17647);
+  }
+  .fx-wl-90 {
+    flex: 0 0 calc((100% - (0.11111 * var(--fx-gap))) / 1.11111);
+    max-width: calc((100% - (0.11111 * var(--fx-gap))) / 1.11111);
+  }
+  .fx-wl-95 {
+    flex: 0 0 calc((100% - (0.05263 * var(--fx-gap))) / 1.05263);
+    max-width: calc((100% - (0.05263 * var(--fx-gap))) / 1.05263);
+  }
+  .fx-wl-100 {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+}

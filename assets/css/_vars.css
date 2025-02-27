@@ -1,0 +1,189 @@
+:root {
+  /* Max Width 
+  ====================================*/
+  --fx-sm: 36rem; /* 576px */
+  --fx-md: 48rem; /* 768px */
+  --fx-lg: 62rem; /* 992px */
+  --fx-max-width: 80rem; /* 1280px */
+  --fx-max-width-alt: 90rem; /* 1440px */
+
+  /* Fonts 
+  ====================================*/
+  --font-family-global: "fx_fonts";
+  --font-size-global: 0.95rem;
+  --line-height-global: 2.2;
+  --font-weight-global: normal;
+  --font-style-global: normal;
+  --letter-spacing-global: 0;
+
+  /* font h1 */
+  --font-family-h1: "fx_fonts";
+  --font-size-h1: 1.7rem;
+  --line-height-all-heading: 1.2;
+  --font-weight-h1: 900;
+  /* --color-h1: var(--main-color); */
+  --margin-bottom-h1: 1.5rem;
+
+  /* font h2 */
+  --font-family-h2: "fx_fonts";
+  --font-size-h2: 1.5rem;
+  --line-height-h2: var(--line-height-all-heading);
+  --font-weight-h2: 850;
+  /* --color-h2: var(--mix-color); */
+  --margin-bottom-h2: 1.2rem;
+
+  /* font h3 */
+  --font-family-h3: "fx_fonts";
+  --font-size-h3: 1.2rem;
+  --line-height-h3: var(--line-height-all-heading);
+  --font-weight-h3: 800;
+  /* --color-h3: var(--third-color); */
+  --margin-bottom-h3: 1rem;
+
+  --text-center: center;
+
+  /* Colors 
+  ====================================*/
+  --main-color: #e4dfee;
+  --mix-color: #f4f7fb;
+  --light-color: #f7f7f7;
+  --white-color: #ffffff;
+
+  --bg-white: #ffffff;
+  --bg-light: #f7f7f7;
+
+  /* Buttons
+  ====================================*/
+  --font-size-btns: 1rem;
+  --padding-btns: 0.4rem 1.5rem;
+  --border-radius-btns: 2rem;
+
+  --bg-btn-01: #f7fffb;
+  --border-btn-01: 0.1rem solid #36704f;
+  --color-btn-01: #36704f;
+
+  --bg-btn-02: #fff7fb;
+  --border-btn-02: 0.1rem solid #6b002d;
+  --color-btn-02: #6b002d;
+
+  --bg-btn-03: #f0f0f0;
+  --color-btn-03: #424242;
+  --outline-btn-03: 0.15rem solid #a68be761;
+  --outline-offset-btn-03: 0.2rem;
+
+  /* Transition 
+  ====================================*/
+  --fx-transition: 0.3s ease;
+  --fx-delay: 0.1s;
+
+  /* Gaps 
+  ====================================*/
+  --fx-gap: 1rem;
+  --fx-gap-2: 1.5rem;
+
+  --line-height-1: 1.2;
+  --line-height-xl: 2.2;
+
+  --divider-1: 1rem;
+  --divider-2: 2rem;
+  --divider-3: 3rem;
+  --divider-4: 4rem;
+
+  /* Width & Height
+  ====================================*/
+  --w100: 100%;
+  --vh100: 100vh;
+
+  /* Padding & Margin
+  ====================================*/
+  /* Padding */
+  --fx-p: 1rem;
+  --fx-p-1: 1rem 0.5rem;
+  --fx-p-2: 1.2rem 0;
+
+  --py-2: 2rem 0;
+  --py-3: 3rem 0;
+  --py-4: 4rem 0;
+
+  --p-0: 0;
+  --pt-1: 0.5rem;
+  --pt-2: 1rem;
+  --pb-1: 0.5rem;
+  --pb-2: 1rem;
+
+  /* Margin */
+  --m-auto: 0 auto;
+  --m-0: 0;
+  --mt-1: 0.5rem;
+  --mt-2: 1rem;
+  --mb-1: 0.5rem;
+  --mb-2: 1rem;
+
+  /* Borders 
+  ====================================*/
+  --border-1: 0.1rem solid var(--main-color);
+  --rounded-1: 0.5rem;
+  --rounded-2: 1rem;
+
+  /* Flex 
+  ====================================*/
+  /* Display */
+  --d-flex: flex;
+  --d-inline-flex: inline-flex;
+  --d-block: block;
+  --d-inline-block: inline-block;
+  --d-none: none;
+
+  /* Flex Direction */
+  --dir-row: row;
+  --dir-col: column;
+  --dir-row-rev: row-reverse;
+  --dir-col-rev: column-reverse;
+
+  /* Justify Content */
+  --just-start: flex-start;
+  --just-end: flex-end;
+  --just-center: center;
+  --just-between: space-between;
+  --just-around: space-around;
+  --just-evenly: space-evenly;
+
+  /* Align Items */
+  --item-start: flex-start;
+  --item-end: flex-end;
+  --item-center: center;
+  --item-base: baseline;
+  --item-stretch: stretch;
+
+  /* Align Content */
+  --cont-start: flex-start;
+  --cont-end: flex-end;
+  --cont-center: center;
+  --cont-between: space-between;
+  --cont-around: space-around;
+  --cont-stretch: stretch;
+
+  /* Flex Grow */
+  --grow-0: 0;
+  --grow-1: 1;
+
+  /* Flex Shrink */
+  --shrink-0: 0;
+  --shrink-1: 1;
+
+  /* Flex Basis */
+  --basis-auto: auto;
+  --basis-0: 0;
+
+  /* Align Self */
+  --self-start: flex-start;
+  --self-end: flex-end;
+  --self-center: center;
+  --self-base: baseline;
+  --self-stretch: stretch;
+
+  /* Flex Wrap */
+  --wrap: wrap;
+  --nowrap: nowrap;
+  --wrap-rev: wrap-reverse;
+}

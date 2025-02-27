@@ -1,0 +1,141 @@
+/* ریست حاشیه، پدینگ و box-sizing برای همه المان‌ها */
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* تنظیمات پایه برای body */
+body {
+  font-family: "Vazir", sans-serif;
+  line-height: 1.6;
+  direction: rtl;
+  background-color: #fff;
+  color: #333;
+}
+
+/* ریست المان‌های بلاک */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+/* ریست لیست‌ها */
+ul,
+ol {
+  list-style: none;
+}
+
+/* ریست نقل‌قول‌ها */
+blockquote,
+q {
+  quotes: none;
+}
+blockquote::before,
+blockquote::after,
+q::before,
+q::after {
+  content: "";
+  content: none;
+}
+
+/* ریست جدول‌ها */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* ریست المان‌های فرم */
+input,
+textarea,
+select,
+button {
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+  margin: 0;
+  padding: 0;
+  border: none;
+  background: none;
+  outline: none;
+}
+
+/* ریست دکمه‌ها */
+button {
+  cursor: pointer;
+}
+
+/* ریست لینک‌ها */
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* ریست تصاویر */
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* ریست المان‌های تعاملی */
+iframe,
+embed,
+object,
+video {
+  max-width: 100%;
+}
+
+/* ریست المان‌های heading */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: inherit;
+  font-weight: inherit;
+  margin: 0;
+}
+
+/* ریست المان‌های پاراگراف و متن */
+p,
+pre,
+code,
+kbd,
+samp {
+  margin: 0;
+}
+
+/* ریست المان‌های فرم خاص */
+fieldset {
+  border: none;
+  margin: 0;
+  padding: 0;
+}
+
+/* ریست المان‌های HTML5 */
+audio,
+canvas,
+progress,
+video {
+  display: inline-block;
+  vertical-align: baseline;
+}
+
+/* ریست المان‌های پنهان */
+[hidden],
+template {
+  display: none;
+}

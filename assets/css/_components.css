@@ -1,0 +1,40 @@
+/* استایل‌های پیشنهادی برای تگ‌های معنایی */
+.fx-header {
+  background-color: var(--main-color);
+  padding: 1rem 0;
+}
+
+.fx-main {
+  background-color: var(--mix-color);
+  min-height: 80vh; /* برای اطمینان از فضای کافی */
+}
+
+.fx-section {
+  padding: 2rem 0;
+}
+
+.fx-footer {
+  background-color: var(--main-color);
+  padding: 1rem 0;
+}
+
+.fx-logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.fx-nav ul {
+  gap: 1rem; /* فاصله بین آیتم‌های منو */
+}
+
+.fx-nav a:hover {
+  color: #007bff; /* رنگ هاور لینک‌ها */
+}
+
+/* استایل المان‌ها */
+.fx-box {
+  background-color: var(--white-color);
+  padding: var(--fx-p);
+  /* border: var(--border-1); */
+  border-radius: var(--rounded-1);
+}

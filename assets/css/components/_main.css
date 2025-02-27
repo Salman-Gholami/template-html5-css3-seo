@@ -1,0 +1,22 @@
+.fx-main {
+  background-color: var(--bg-light);
+}
+
+.fx-section {
+  padding: var(--py-3);
+}
+
+.fx-box {
+  background-color: var(--white-color);
+  padding: var(--fx-p-1);
+  border: var(--border-1);
+  border-radius: var(--rounded-1);
+  display: var(--d-flex);
+  flex-direction: var(--dir-col);
+  gap: var(--fx-gap-2);
+  align-items: var(--item-center);
+}
+
+.fx-box p {
+  text-align: var(--text-center);
+}

@@ -1,0 +1,9 @@
+@font-face {
+  font-family: "fx_fonts";
+  src: url("Vazir.eot");
+  /* IE9 Compat Modes */
+  src: url("Vazir.eot?#iefix") format("embedded-opentype"),
+    url("Vazir.woff2") format("woff2"), url("Vazir.woff") format("woff"),
+    url("Vazir.ttf") format("truetype");
+  /* Safari, Android, iOS */
+}
